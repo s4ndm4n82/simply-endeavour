@@ -2,7 +2,7 @@
 *                                                                     *
 *                      SDDM Theme for Endeavour OS                    *
 *                                                                     *
-*       Created by: S4NDM4N                      Version: 0.1         *
+*       Created by: S4NDM4N                      Version: 1.0         *
 *                                                                     *
 **********************************************************************/
 
