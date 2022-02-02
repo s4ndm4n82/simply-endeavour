@@ -1,9 +1,9 @@
 [SddmGreeterTheme]
 Name=Simply Endeavour
-Description=Simply Endeavour SDDM theme.\n Created for EndeavourOS.
+Description=Simply Endeavour SDDM theme. Created for EndeavourOS.
 Type=sddm-theme
 Author=Sandaruwan Samaraweera
-Copyright=(c) 2022, Sandaruwan Samraweera
+Copyright=(c) 2022, Sandaruwan Samaraweera
 Screenshot=preview.png
 License=MIT
 Version=1.0
@@ -11,4 +11,4 @@ MainScript=Main.qml
 ConfigFile=theme.conf
 Theme-Id=simply-endeavour
 Theme-API=2.0
-Website=https://gitlab.com/isseigx/simplicity-sddm-theme
+Website=https://github.com/s4ndm4n82/simply-endeavour
