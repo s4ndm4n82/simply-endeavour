@@ -12,6 +12,7 @@ import QtQuick.Controls 2.14
 import SddmComponents 2.0
 import "ControlSet" as Cset
 
+
 Rectangle{
     readonly property color backgroundColor: Qt.rgba(0, 0, 0, 0.4)
     readonly property color hoverBackgroundColor: Qt.rgba(0, 0, 0, 0.6)
@@ -56,8 +57,8 @@ Rectangle{
         Cset.ComboBox {
             id: userName
             model: userModel
-            currentIndex: userModel.lastIndex
-            textRole: "relaName"
+            currentIndex: userModel.lastIndex >= 0 ? userModel.lastIndex : 0
+            textRole: "realName"
             width: 250
             KeyNavigation.backtab: session
             KeyNavigation.tab: passEntry
