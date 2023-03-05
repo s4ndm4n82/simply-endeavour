@@ -1,0 +1,23 @@
+# Maintainer: EndeavourOS <info@endeavouros.com>
+
+pkgname=simply-endeavour
+pkgver=1.0
+pkgrel=1
+pkgdesc='EndeavourOS Theme for SDDM'
+arch=('any')
+url="https://github.com/s4ndm4n82/simply-endeavour"
+license=('MIT')
+depends=('sddm' 'qt5-quickcontrols2')
+makedepends=('git')
+install=se-theme.install
+source=("https://github.com/s4ndm4n82/${pkgname}/archive/refs/tags/${pkgver}.tar.gz"
+"se-theme.install")
+sha256sums=('1b53cc1df092437ed09f3430e12da835902e9fa866ff254fa54b01b93cc9f34e'
+            'b27673ae18de1f1d8f4d469c0d16e108fbc6f0a639297117173a8826c9de8a38')
+
+package() {
+    install -dm 755 $pkgdir/usr/share/sddm/themes/$pkgname
+    install -dm 755 $pkgdir/etc/sddm.conf.d/
+    cp -r --no-preserve=ownership $srcdir/$pkgname-${pkgver}/$pkgname $pkgdir/usr/share/sddm/themes/
+    cp --no-preserve=ownership $srcdir/$pkgname-${pkgver}/10-simplyenodeavour.conf $pkgdir/etc/sddm.conf.d/
+}
